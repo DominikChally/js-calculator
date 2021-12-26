@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+}
+
+button{
+    margin: 15px;
+}
+
+input {
+    width: 50px;
+}
+
+.calc-row {
+    padding: 5px;
+    display: flex;
+}
+
