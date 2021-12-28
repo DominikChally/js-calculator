@@ -1,17 +1,36 @@
 h1 {
-    color: red;
+    color:darkturquoise;
+    padding-left: 1.5rem;
+    border: black;
 }
 
 button{
-    margin: 15px;
+    margin: 2px;
+    width: 5rem;
+    height: 2rem;
 }
 
 input {
     width: 50px;
+    margin: 5px;
+    border-radius: 50px;
 }
 
+#operation, #equals {
+    padding-top: 6px;
+}
+
+#Enter {
+    background-color: grey;
+}
 .calc-row {
     padding: 5px;
     display: flex;
 }
 
+.row1 {
+    border: black;
+}
+body {
+    background-color: coral;
+}
