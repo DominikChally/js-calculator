@@ -1,15 +1,27 @@
 let buttons = document.querySelector('.button');
+let operations = document.querySelector('.operations');
+
 
 buttons.addEventListener('click', (event) => {
     const elem = event.target;
     let calcValue = document.querySelector('.Calc-input');
-    
+    const calculator = document.querySelector('.calculator');
 
-    if (elem.id === 'add') {
+
+
+    // Getting numbers in an array
+    if (elem.classList.contains('operations')) {
+        calculator.dataset.firstNumber = calcValue.value;
+        calculator.dataset.operationPressed = elem.textContent;
+
         calcValue.value = 0;
-    } else if (elem.id === 'fourth') {
-        calcValue.value /= 4;
-    } else if (elem.id === 'clear') {
+        console.log(calculator.dataset.operationPressed);
+        console.log(calculator.dataset.firstNumber);
+    }
+
+
+
+    if (elem.id === 'clear') {
         calcValue.value = 0;
     } else if (elem.id === 'decimal') {
         if (!calcValue.value.includes('.')) {
@@ -29,4 +41,14 @@ buttons.addEventListener('click', (event) => {
             calcValue.value += userNum;
         }
     } 
+
+    if (elem.id === 'enter') {
+        if (calculator.dataset.firstNumber && calculator.dataset.operationPressed) {
+            calculator.dataset.secondNumber = calcValue.value;
+            console.log(calculator.dataset.secondNumber);
+            
+
+        }
+    }
+
 });
