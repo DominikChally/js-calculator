@@ -1,5 +1,0 @@
-TODO:
-Remove: Double, Fourth
-Add: Four main operation buttons(plus decimal button), clear button, Clean up display/add any css
-
--
