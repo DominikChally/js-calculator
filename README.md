@@ -1,3 +1,4 @@
 # js-calculator
 Basic calculator with javascript.  
-Github page: https://dominikchally.github.io/js-calculator/calculator2
+Github page: https://dominikchally.github.io/js-calculator/index.html
+
